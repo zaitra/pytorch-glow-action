@@ -1,0 +1,11 @@
+name: 'Pytorch glow in docker container'
+description: 'Use pytorch glow in your github actions'
+inputs:
+  command:
+    description: 'Build command to be run'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.command }}
