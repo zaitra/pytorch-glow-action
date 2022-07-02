@@ -6,6 +6,6 @@ inputs:
     required: true
 runs:
   using: 'docker'
-  image: docker.io/zaitra/pytorch-gh-action
+  image: docker://docker.io/zaitra/pytorch-gh-action
   args:
     - ${{ inputs.command }}
